@@ -1,4 +1,4 @@
-﻿var app = angular.module('Diabetes', ['ngRoute', 'ui.bootstrap']);
+﻿var app = angular.module('Diabetes', ['ngRoute']);
 app.config(function ($routeProvider) {
     $routeProvider
 
