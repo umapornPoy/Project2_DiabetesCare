@@ -5,6 +5,10 @@ app.config(function ($routeProvider) {
     .when("/", {
         templateUrl: "Home/Index"
     })
+        .when("/CalSugar", {
+            templateUrl: "Calculate/CalSugar",
+            controller: 'CalSugarController'
+        })
      .otherwise({
          templateUrl: "/"
      })
