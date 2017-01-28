@@ -153,6 +153,7 @@
     <Compile Include="Controllers\CalculateController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -8409,6 +8410,7 @@
     <Content Include="Template\vendors\transitionize\package.json" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\Calculate\CalSugar.cshtml" />
   </ItemGroup>
   <ItemGroup>
