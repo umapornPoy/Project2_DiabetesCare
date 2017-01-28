@@ -63,7 +63,7 @@
                             <h3>General</h3>
                             <ul class="nav side-menu">
                                 <li>
-                                    <a><i class="fa fa-edit"></i> Edit Member </a>
+                                    <a><i class="fa fa-edit"></i> Edit Profile </a>
                                 </li>
                                 <li>
                                     <a><i class="fa fa-book"></i> Record Sugar </a>
@@ -220,8 +220,8 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="x_content">
 
+                  <div class="x_content">
                     <div class="col-md-4 col-sm-4 col-xs-12">
                       <div class="product-image">
                           <img src="~/Image/user-icon.png" alt="..." />
@@ -230,86 +230,58 @@
 
                     <div class="col-md-8 col-sm-8 col-xs-12" style="border:0px solid #e5e5e5;">
 
-                      <h3 class="prod_title">LOWA Men’s Renegade GTX Mid Hiking Boots Review</h3>
-
-                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
-                      <br />
-
-                      <div class="">
-                        <h2>Available Colors</h2>
-                        <ul class="list-inline prod_color">
-                          <li>
-                            <p>Green</p>
-                            <div class="color bg-green"></div>
-                          </li>
-                          <li>
-                            <p>Blue</p>
-                            <div class="color bg-blue"></div>
-                          </li>
-                          <li>
-                            <p>Red</p>
-                            <div class="color bg-red"></div>
-                          </li>
-                          <li>
-                            <p>Orange</p>
-                            <div class="color bg-orange"></div>
-                          </li>
-
-                        </ul>
-                      </div>
-                      <br />
-
-                      <div class="">
-                        <h2>Size <small>Please select one</small></h2>
-                        <ul class="list-inline prod_size">
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Small</button>
-                          </li>
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Medium</button>
-                          </li>
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Large</button>
-                          </li>
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Xtra-Large</button>
-                          </li>
-                        </ul>
-                      </div>
-                      <br />
-
-                      <div class="">
-                        <div class="product_price">
-                          <h1 class="price">Ksh80.00</h1>
-                          <span class="price-tax">Ex Tax: Ksh80.00</span>
-                          <br>
+                       
+                        <div class="price">
+                                <h2 class="col-md-5 col-sm-7">First Name   :   <a>Umaporn</a></h2>
+                                <h2 class="col-md-5 col-sm-7">Last Name   :   <a>Tunlang</a></h2>
                         </div>
-                      </div>
+                            <br />
+                        <div class="price">
+                            <h2 class="col-md-5 col-sm-7">Gender   :   <a>Female</a></h2>
+                            <h2 class="col-md-5 col-sm-7">Age   :   <a>22</a></h2>
+                        </div>
+                        <br />
+                        <div class="price">
+                            <h2 class="col-md-5 col-sm-7">Sympton   :   <a>Insulin</a></h2>
+                            <h2 class="col-md-5 col-sm-7">BMI   :   <a>21.87</a></h2>
+                        </div>
+                        <br />
 
-                      <div class="">
-                        <button type="button" class="btn btn-default btn-lg">Add to Cart</button>
-                        <button type="button" class="btn btn-default btn-lg">Add to Wishlist</button>
-                      </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div>
+                                <h2>Latest Sugar</h2>
+                                <div class="">
+                                    <div class="progress progress_sm" style="width: 76%;">
+                                        <div class="progress-bar bg-red" role="progressbar" data-transitiongoal="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
 
-                      <div class="product_social">
-                        <ul class="list-inline">
-                          <li><a href="#"><i class="fa fa-facebook-square"></i></a>
-                          </li>
-                          <li><a href="#"><i class="fa fa-twitter-square"></i></a>
-                          </li>
-                          <li><a href="#"><i class="fa fa-envelope-square"></i></a>
-                          </li>
-                          <li><a href="#"><i class="fa fa-rss-square"></i></a>
-                          </li>
-                        </ul>
-                      </div>
-
-                    </div>
-
+                        </div>
                   </div>
                 </div>
               </div>
             </div>
+
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="dashboard_graph">
+                          <div class="x_title">
+                              <h3>Sugar Graph <small>The graph shows the blood sugar.</small></h3>                            
+                          </div>
+
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
+                              <div style="width: 100%;">
+                                  <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+                              </div>
+                          </div>   
+
+                          <div class="clearfix"></div>
+                      </div>
+                  </div>
+              </div>
           </div>
         </div>
         <!-- /page content -->
@@ -379,6 +351,83 @@
     <script src="~/DiabetesJS/app.js"></script>
 
     <script data-require="ui-bootstrap@1.0.0" data-semver="1.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
+
+
+    <!-- Flot -->
+    <script>
+      $(document).ready(function() {
+        var data1 = [
+          [gd(2012, 1, 1), 17],
+          [gd(2012, 1, 2), 74],
+          [gd(2012, 1, 3), 6],
+          [gd(2012, 1, 4), 39],
+          [gd(2012, 1, 5), 20],
+          [gd(2012, 1, 6), 85],
+          [gd(2012, 1, 7), 7]
+        ];
+
+        var data2 = [
+          [gd(2012, 1, 1), 82],
+          [gd(2012, 1, 2), 23],
+          [gd(2012, 1, 3), 66],
+          [gd(2012, 1, 4), 9],
+          [gd(2012, 1, 5), 119],
+          [gd(2012, 1, 6), 6],
+          [gd(2012, 1, 7), 9]
+        ];
+        $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
+          data1, data2
+        ], {
+          series: {
+            lines: {
+              show: false,
+              fill: true
+            },
+            splines: {
+              show: true,
+              tension: 0.4,
+              lineWidth: 1,
+              fill: 0.4
+            },
+            points: {
+              radius: 0,
+              show: true
+            },
+            shadowSize: 2
+          },
+          grid: {
+            verticalLines: true,
+            hoverable: true,
+            clickable: true,
+            tickColor: "#d5d5d5",
+            borderWidth: 1,
+            color: '#fff'
+          },
+          colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
+          xaxis: {
+            tickColor: "rgba(51, 51, 51, 0.06)",
+            mode: "time",
+            tickSize: [1, "day"],
+            //tickLength: 10,
+            axisLabel: "Date",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 12,
+            axisLabelFontFamily: 'Verdana, Arial',
+            axisLabelPadding: 10
+          },
+          yaxis: {
+            ticks: 8,
+            tickColor: "rgba(51, 51, 51, 0.06)",
+          },
+          tooltip: false
+        });
+
+        function gd(year, month, day) {
+          return new Date(year, month - 1, day).getTime();
+        }
+      });
+    </script>
+    <!-- /Flot -->
 
        </body>
 </html>
