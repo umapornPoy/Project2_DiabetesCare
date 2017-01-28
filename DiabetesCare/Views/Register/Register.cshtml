@@ -85,7 +85,7 @@
                                    Firstname
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" ng-model="register.first_name" id="firstname" required="required" class="form-control col-md-7 col-xs-12">
+                                    <input type="text" id="firstname" required="required" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
 
@@ -94,7 +94,7 @@
                                     Lastname
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" ng-model="register.last_name" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
+                                    <input type="text" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
 
@@ -119,7 +119,7 @@
                                     Email
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="email" ng-model="register.email" class="form-control has-feedback-left" id="email" placeholder="example@email.com" required="required">
+                                    <input type="email" class="form-control has-feedback-left" id="email" placeholder="example@email.com" required="required">
                                     <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
                                 </div>
                             </div>
@@ -168,20 +168,53 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <select class="form-control">
                                         <option value="">Select Complication</option>
-                                        <option value="1">heart disease</option>
-                                        <option value="2">Diabetic retinopathy</option>
+                                        <option value="1">retinopathy</option>
+                                        <option value="2">nephropathy</option>
+                                        <option value="3">neuropathy</option>
+                                        <option value="4">Diabetic ulcer</option>
+                                        <option value="5">Diabetic foot</option>
                                     </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                    Disease
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <select class="form-control">
+                                        <option value="">Select Disease</option>
+                                        <option value="1">Cardiovascular Disease)</option>
+                                        <option value="2">High blood pressure</option>
+                                        <option value="3">kidney disease</option>
+                                        <option value="4">peripheral neuropathy Disease</option>
+                                        <option value="5">Eye disease</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="genders" class="control-label col-md-3 col-sm-3 col-xs-12">
+                                    Drug allergy
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <input class="flat iradio_flat-green" type="radio"
+                                               name="genders" value="1"> Yes
+                                        <input class="flat iradio_flat-green" type="radio"
+                                               name="gender" value="2"> No
+                                    </p>
                                 </div>
                             </div>
                            
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                    <button type="button" ng-click="Cancel()"
+                                    <button onclick="parent.location='/Login/Login'" type="button"
                                             class="btn btn-primary pull-right">
                                         Cancel
                                     </button>
-                                    <button type="submit" ng-click="addMember(register)"
+                                    <button type="submit" onclick="parent.location='/'"
                                             class="btn btn-success pull-right">
                                         Submit
                                     </button>
@@ -201,15 +234,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">{{'Close' | translate}}</span></button>
-                    <h4 class="modal-title" id="defModalHead">{{'RegisterSuccess' | translate}} </h4>
+                    <h4 class="modal-title" id="defModalHead">RegisterSuccess </h4>
                 </div>
                 <div class="modal-body">
                     <img src="~/Images/register/right_icon.png" class="img-responsive" />
-                    <h4>{{'mainpage'| translate}} </h4>
+                    <h4>mainpage </h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" onclick="parent.location='/#/Point'" class="btn btn-success" data-dismiss="modal">{{'YES' | translate}} </button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">{{'NO' | translate}} </button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">NO </button>
                 </div>
             </div>
         </div>
@@ -219,16 +252,7 @@
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/angular-route.min.js"></script>
     <script src="~/Scripts/angular-sanitize.js"></script>
-    <script src="~/Scripts/angular-translate.js"></script>
-
-    <script src="~/MemberJS/app.js"></script>
-    <script src="~/MemberJS/barcodeGenerator.js"></script>
-    <script src="~/MemberJS/qrcode.js"></script>
-    <script src="~/MemberJS/angular-qr.js"></script>
-    <script src="~/MemberJS/unit.spec.js"></script>
-    <script src="~/MemberJS/register.js"></script>
-    <script src="~/MemberJS/addimage.js"></script>
-    <script src="~/MemberJS/translate.js"></script>
+    <script src="~/DiabetesJS/app.js"></script>
 
     <!-- jQuery -->
     <script src="~/Template/vendors/jquery/dist/jquery.min.js"></script>
